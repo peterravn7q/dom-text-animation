@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ 
+.word-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
+#btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
+#word {
+    margin: 4rem 0;
+    padding: 2rem 0;
+    font-size: 3rem;
+    color: darkcyan;
+ 
+    /* Reserverer plads til max skriftstørrelse (6rem) + padding (4rem), så #word ikke
+       ændrer højde og skubber knappen, når JavaScript skifter font-size ved klik. */
+    line-height: 1;
+    min-height: 10rem;
+    /* Prøv selv: åbn DevTools i browseren, og ændr min-height her (fx til 5rem) midlertidigt.
+       Klik derefter på knappen og se, hvordan #word og knappen rykker sig igen. */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+#zoomBtn {
+  /* Prøv selv: ændr fx background-color eller font-size herunder, og se i browseren,
+     hvordan det påvirker knappens udseende, når du klikker på den. */
+  width: 10rem;
+  height: 3rem;
+  background-color: darkgoldenrod;
+  font-size: 1.7rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
